@@ -1,0 +1,15 @@
+name: Labeling_workflow
+on:
+issues:
+types:[opened, edited, reopened]
+jobs:
+label_issues:
+runs-on: ubunto-latest
+steps:
+-uses: actions/checkout@v1
+-name:print hello world
+run:eco hello world!
+-name:label-step
+uses: ./.github/actions/issuelaber
+with:
+repo-token:${{secrets.GITHUB_TOKEN}}
