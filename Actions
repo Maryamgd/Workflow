@@ -1,0 +1,5 @@
+name: "Issue Labler"
+description: "automatically labels any new issue with the label 'new'"
+runs:
+using:"node12"
+main: "index.js"
