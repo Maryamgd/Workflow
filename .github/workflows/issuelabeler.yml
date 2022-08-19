@@ -7,9 +7,9 @@ label_issues:
 runs-on: ubunto-latest
 steps:
 -uses: actions/checkout@v1
--name:Print Hello world
+-name: Print Hello world
 run: eco Hello world!
--name:label-step
+-name: label-step
 uses: ./.github/actions/issuelaber
 with:
-repo-token:${{secrets.GITHUB_TOKEN}}
+repo-token: ${{secrets.GITHUB_TOKEN}}
