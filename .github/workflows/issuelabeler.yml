@@ -7,8 +7,8 @@ label_issues:
 runs-on: ubunto-latest
 steps:
 -uses: actions/checkout@v1
--name:print hello world
-run:eco hello world!
+-name:Print Hello world
+run: eco Hello world!
 -name:label-step
 uses: ./.github/actions/issuelaber
 with:
