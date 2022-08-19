@@ -1,7 +1,7 @@
 name: Labeling_workflow
 on:
 issues:
-types:[opened, edited, reopened]
+types: [opened, edited, reopened]
 jobs:
 label_issues:
 runs-on: ubunto-latest
